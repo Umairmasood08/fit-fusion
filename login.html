@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - FitFusion</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      background: #1f1f1f;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #b6ff4c;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      background: #2a2a2a;
+      color: #fff;
+    }
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      background: #b6ff4c;
+      color: #000;
+      font-weight: bold;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #d5ff83;
+    }
+  </style>
+</head>
+<body>
+  <form class="form-container" method="POST" action="login.php">
+    <h2>Login to FitFusion</h2>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+
+    <label for="role">Login As</label>
+    <select name="role" id="role" required>
+      <option value="member">Member</option>
+      <option value="trainer">Trainer</option>
+    </select>
+
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>

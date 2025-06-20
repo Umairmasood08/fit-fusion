@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payments - FitFusion</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: #b6ff4c;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      color: #b6ff4c;
+    }
+    .payments-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      color: #ccc;
+    }
+    th {
+      background: #2a2a2a;
+      color: #b6ff4c;
+    }
+    tr:hover {
+      background-color: #2b2b2b;
+    }
+    .status-paid {
+      color: #8aff8a;
+    }
+    .status-due {
+      color: #ff9999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FITfusion</div>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+  <h2>Payment History</h2>
+
+  <div class="payments-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-05-01</td>
+          <td>$49.99</td>
+          <td class="status-paid">Paid</td>
+          <td>Credit Card</td>
+        </tr>
+        <tr>
+          <td>2025-04-01</td>
+          <td>$49.99</td>
+          <td class="status-paid">Paid</td>
+          <td>Credit Card</td>
+        </tr>
+        <tr>
+          <td>2025-03-01</td>
+          <td>$49.99</td>
+          <td class="status-due">Due</td>
+          <td>Pending</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

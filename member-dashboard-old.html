@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Dashboard - FitFusion</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: #b6ff4c;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      color: #b6ff4c;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(182, 255, 76, 0.3);
+    }
+    .card h3 {
+      color: #b6ff4c;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FITfusion</div>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+  <h2>Welcome, Member</h2>
+  <div class="dashboard">
+    <div class="card">
+      <h3>My Sessions</h3>
+      <p>View upcoming and past training sessions.</p>
+    </div>
+    <div class="card">
+      <h3>Diet Plan</h3>
+      <p>Personalized nutrition and meal tracking.</p>
+    </div>
+    <div class="card">
+      <h3>Progress</h3>
+      <p>Track your goals and fitness metrics.</p>
+    </div>
+    <div class="card">
+      <h3>Billing</h3>
+      <p>Check payment history and subscription info.</p>
+    </div>
+    <div class="card">
+      <h3>Feedback</h3>
+      <p>Submit your feedback or rate sessions.</p>
+    </div>
+  </div>
+</body>
+</html>

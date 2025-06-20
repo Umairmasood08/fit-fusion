@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session Booking - FitFusion</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: #b6ff4c;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      color: #b6ff4c;
+    }
+    .sessions {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .session-card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .session-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(182, 255, 76, 0.3);
+    }
+    .session-card h3 {
+      color: #b6ff4c;
+      margin-bottom: 0.5rem;
+    }
+    .session-card p {
+      color: #ccc;
+    }
+    .session-card button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #b6ff4c;
+      border: none;
+      border-radius: 8px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FITfusion</div>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+
+  <h2>Book a Training Session</h2>
+
+  <div class="sessions">
+    <div class="session-card">
+      <h3>HIIT - Morning Burn</h3>
+      <p>Mon/Wed/Fri - 7:00 AM</p>
+      <p>Trainer: Logan Torque</p>
+      <button>Book Now</button>
+    </div>
+    <div class="session-card">
+      <h3>Strength Circuit</h3>
+      <p>Tue/Thu - 6:00 PM</p>
+      <p>Trainer: Liam Crossfit</p>
+      <button>Book Now</button>
+    </div>
+    <div class="session-card">
+      <h3>Flex & Mobility</h3>
+      <p>Weekends - 9:00 AM</p>
+      <p>Trainer: Blake Hunter</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+</body>
+</html>

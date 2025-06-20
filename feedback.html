@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - FitFusion</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: #b6ff4c;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      color: #b6ff4c;
+    }
+    .feedback-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #1f1f1f;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 0.5rem;
+      color: #ccc;
+    }
+    textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      background: #2a2a2a;
+      color: #fff;
+      resize: vertical;
+      height: 120px;
+    }
+    button {
+      background: #b6ff4c;
+      color: #000;
+      font-weight: bold;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FITfusion</div>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="logout.php">Logout</a>
+    </nav>
+  </header>
+  <h2>We Value Your Feedback</h2>
+  <div class="feedback-container">
+    <form method="POST" action="submit-feedback.php">
+      <label for="message">Your Feedback</label>
+      <textarea id="message" name="feedback" placeholder="Share your experience..." required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>

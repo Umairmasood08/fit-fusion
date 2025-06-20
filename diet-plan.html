@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Plan - FitFusion</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: #b6ff4c;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      color: #b6ff4c;
+    }
+    .diet-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem 2rem 2rem;
+    }
+    .meal {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .meal:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(182, 255, 76, 0.3);
+    }
+    .meal h3 {
+      color: #b6ff4c;
+      margin-bottom: 0.5rem;
+    }
+    .meal ul {
+      margin: 0;
+      padding-left: 1.5rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FITfusion</div>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+  <h2>Personalized Diet Plan</h2>
+
+  <div class="diet-container">
+    <div class="meal">
+      <h3>Breakfast</h3>
+      <ul>
+        <li>Oats with almond milk and berries</li>
+        <li>1 boiled egg</li>
+        <li>Green tea</li>
+      </ul>
+    </div>
+    <div class="meal">
+      <h3>Lunch</h3>
+      <ul>
+        <li>Grilled chicken breast</li>
+        <li>Brown rice</li>
+        <li>Steamed broccoli and carrots</li>
+      </ul>
+    </div>
+    <div class="meal">
+      <h3>Snack</h3>
+      <ul>
+        <li>Greek yogurt with honey</li>
+        <li>A handful of almonds</li>
+      </ul>
+    </div>
+    <div class="meal">
+      <h3>Dinner</h3>
+      <ul>
+        <li>Baked salmon</li>
+        <li>Quinoa</li>
+        <li>Side salad with olive oil</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
